@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body >
+</body>
+<script>
+    function deleteNumberFromArray(arr, index) {
+        if (index < 0 || index > arr.length){
+            return arr
+        } 
+        arr.splice(index, 1);
+        return arr
+    }
+    let arr = prompt('nhap vao mang').split(',')
+    let index = +prompt('nhap vao index')
+    alert(deleteNumberFromArray(arr, index))
+</script>
+
+</html>

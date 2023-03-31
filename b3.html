@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body >
+</body>
+<script>
+    function sumOfListFibonacy(x) {
+        let sum = 0;
+        let num1 = 0;
+        let num2 = 1;
+        for (let i = 0; i <= x; i++) {
+            sum += num1;
+            let nextFib = num1 + num2;
+            num1 = num2;
+            num2 = nextFib;
+        }
+        return sum;
+    }
+    alert(sumOfListFibonacy(+prompt('nhap so x')))
+</script>
+
+</html>
